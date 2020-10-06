@@ -1,4 +1,4 @@
-![Image](Screenshots/Trading212 Logo.jpg?raw=true)
+![Image1](Screenshots/Trading212 Logo.png?raw=true)
 ## Trading 212 Extended-Hours Price Googler
 This is a simple Python script used for looking up the pre-market and after-hours price action on your Trading 212 holdings.
 
