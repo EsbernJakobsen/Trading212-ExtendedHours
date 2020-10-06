@@ -3,8 +3,8 @@ from time import sleep
 import re
 import random
 
-username = 'your_username'  # Your username here
-password = 'your_password'  # Your username here
+username = 'your_name@email.com'  # Your username here
+password = 'your_password'  # Your password here
 
 # Initialise browser and specify login details
 browser = webdriver.Firefox()
