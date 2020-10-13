@@ -6,11 +6,12 @@ from time import sleep
 import re
 import random
 
+# Specify login details
 username = 'your_name@email.com'  # Your username here
 password = 'your_password'  # Your password here
 
-# Initialise browser and specify login details
-browser = webdriver.Firefox()
+# Initialise browser and specify path to chromedriver
+browser = webdriver.Chrome('/path/to/chromedriver')  # Optional argument, if not specified will search path.
 
 # Open Trading212 and login
 browser.get('https://live.trading212.com/')
@@ -48,7 +49,7 @@ for holding in holdings:
     stocks.append(stock)
 
 # Google search each stock
-for stock in reversed(stocks):
+for stock in stocks:
     browser.execute_script(f"window.open('https://www.google.com/search?q={stock + ' stock price'}','_blank')")
     secs = random.uniform(1, 2.5)
     sleep(secs)
